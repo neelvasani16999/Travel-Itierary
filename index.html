@@ -1,0 +1,323 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" media="all"  href= "index.css">
+<body>
+<div class="screen">
+	<div id="screen-wrapper">
+		<div class="temp-holder"></div>
+		<div class="ribbon-set"></div>
+		<div class="screen-holder"><div class="city-shuffle-screen screen-box show-screen-from-right">
+	<header class="screen-header">
+		<div class="screen-title">
+			Select duration for your cities
+		</div>
+		<div class="screen-caption">
+			Drag and drop your cities to change your route
+		</div>
+		<div class="trip-dates">
+			<span class="start-date-label">Start Date: </span>
+			<span class="start-date-value date js_main_start_date">30 Jan 2020</span>
+			-
+			<span class="end-date-label">End Date: </span>
+			<span class="end-date-value date js_main_end_date">24 Feb 2020</span>
+		</div>
+	</header>
+	<section class="screen-content">
+		<div class="row">
+				<div class="from-city-placeholder js_from_city_placeholder"><div class="from-city-holder is-filled">
+	<div class="city-autocomplete">
+		<div class="input-container autocomplete-box">
+			<div class="drop-card as-dropdown card lift" id="drop-card">
+				<div class="card-header-w js_from_city_box">
+					<div class="card-header">
+						<div class="form-control-w">
+							<div class="form-control search">
+								<input data-no-pu="" class="input-control js_from_city_search" placeholder="Enter City" value="" type="text">
+								<i class="c-icon js_close_autocomplete"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-body" id="js-suggestions">
+					<div class="autcomplete-message dangling-el hide">
+					</div>
+					<div class="js-suggestions-active hide">
+						<div class="auto-suggest-loading"></div>
+					</div>
+					<div class="city-parent-box city-box dangling-el">
+						<div class="city-listing city-list">
+							<ul class="city-list-collection"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="city-name">
+		<i class="icon-circle"></i>
+		
+		Mumbai, India
+		 <span data-no-pu="" class="edit-text js_edit_from_city">(Edit home city)</span>
+	</div>
+
+	<div class="bottom-text">
+		<span class="bt-w">
+			<label class="control checkbox">
+				<input data-no-pu="" id="js_chk_clone_return" checked="checked" type="checkbox">
+				<span class="control-indicator"></span>
+			</label>
+			<span class="coming-back-text">
+				I'm coming back to this city | Start Date: <span class="date">30 Jan 2020</span>
+			</span>
+		</span>
+	</div>
+	<i class="c-icon-city-state js_warning_icon"></i>
+	<div class="tooltip-box hide">
+		<div class="tooltip-content">
+			<i class="icon-close js_warning_close"></i>
+			<p class="js_warning_message"></p>
+		</div>
+	</div>
+</div></div>
+
+				<div class="travel-cities">
+					<ul id="city-sortable"><li class="travel-city-item">
+	<div class="tci-w">
+			<i class="c-icon-city-state js_warning_icon"></i>
+			<i class="icon-move"></i>
+			<div class="tooltip-box hide">
+				<div class="tooltip-content">
+					<i class="icon-close js_warning_close"></i>
+					<p class="js_warning_message">aa</p>
+				</div>
+			</div>
+			<div class="drop-card schedule-dc">
+				<div class="card-header-w">
+					<div class="card-header">
+						<div class="content-box">
+							<div class="content-box-iw">
+								<div class="city-details">
+									<span class="marker">
+										<span class="counter"></span>
+										<i class="icon-map-marker"></i>
+									</span>
+									
+									<span class="city-name" title="Mumbai, India">
+										Mumbai, India
+									</span>
+									<div class="city-schedule">
+										<span class="start-date">30 Jan 2020</span>
+										-
+										<span class="end-date">24 Feb 2020</span>
+									</div>
+								</div>
+								<div class="city-nights js_edit_city_nights">
+									<span class="nights">25</span> Nights
+									<i class="icon-edit-details"></i>
+								</div>
+							</div>
+						</div>
+						<i class="c-icon hide"></i>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="close-w">
+						<span><i class="icon-close close-schedule"></i></span>
+						<div class="row">
+							<div class="edit-schedule grid-1-of-2">
+								<div class="es-iw">
+									<div class="start-date-label itm"><b>Arrive</b></div>
+									<div class="start-date date-itm">
+										<div class="form-control-w --secondary">
+											<div class="form-control calendar">
+												<input class="input-control js_calendar_control js_arrival_date hasDatepicker" placeholder="" value="30 Jan 2020" id="dp1579972496674" type="text">
+												<i class="c-icon js_calendar_icon"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="es-iw">
+									<div class="end-date-label itm"><b>Depart</b></div>
+									<div class="end-date date-itm js_end_date">
+										<div class="form-control-w --secondary">
+											<div class="form-control calendar">
+												<input class="input-control js_calendar_control js_departure_date hasDatepicker" placeholder="" value="24 Feb 2020" id="dp1579972496675" type="text">
+												<i class="c-icon js_calendar_icon"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-1-of-2">
+								<div class="prahara js_arrival_ddl"><div class="drop-card bdr as-dropdown">
+	<div class="card-header-w js_std_dd_hdr">
+		<div class="card-header">
+			<div class="form-control-w --secondary">
+				<div class="form-control">
+					<div class="selected-catg">
+						
+							<span>Before 06:00</span>
+						
+					</div>
+					<i class="c-icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="dd-list ps">
+			<ul class="dd-list-collection js_std_dd_ul">
+	<li class="dd-list-i js_std_dd_elem " data-value="0-6-5" data-pos="" data-name="">
+		
+			<span>Before 06:00</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="6-12-10" data-pos="" data-name="">
+		
+			<span>Morning (06:00 - 12:00)</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="12-18-16" data-pos="" data-name="">
+		
+			<span>Afternoon (12:00 - 18:00)</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="18-24-20" data-pos="" data-name="">
+		
+			<span>After 18:00</span>
+		
+	</li>
+</ul>
+		<div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+	</div>
+</div></div>
+								<div class="prahara js_departure_ddl"><div class="drop-card bdr as-dropdown">
+	<div class="card-header-w js_std_dd_hdr">
+		<div class="card-header">
+			<div class="form-control-w --secondary">
+				<div class="form-control">
+					<div class="selected-catg">
+						
+							<span>Before 06:00</span>
+						
+					</div>
+					<i class="c-icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="dd-list ps">
+			<ul class="dd-list-collection js_std_dd_ul">
+	<li class="dd-list-i js_std_dd_elem " data-value="0-6-5" data-pos="" data-name="">
+		
+			<span>Before 06:00</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="6-12-10" data-pos="" data-name="">
+		
+			<span>Morning (06:00 - 12:00)</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="12-18-16" data-pos="" data-name="">
+		
+			<span>Afternoon (12:00 - 18:00)</span>
+		
+	</li>
+
+	<li class="dd-list-i js_std_dd_elem " data-value="18-24-20" data-pos="" data-name="">
+		
+			<span>After 18:00</span>
+		
+	</li>
+</ul>
+		<div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+	</div>
+</div></div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="button s-size p-color pull-right js_save_schedule">
+								Save
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</li></ul>
+				</div>
+
+				<div class="return-city-placeholder"><div class="return-city-holder is-filled">
+	<div class="city-autocomplete">
+		<div class="input-container autocomplete-box">
+			<div class="drop-card as-dropdown" id="drop-card">
+				<div class="card-header-w">
+					<div class="card-header">
+						<div class="form-control-w">
+							<div class="form-control search">
+								<input data-no-pu="" class="input-control js_rtn_city_search" placeholder="Enter City" value="" type="text">
+								<i class="c-icon js_close_autocomplete"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-body" id="js-suggestions-rtn">
+					<div class="autcomplete-message dangling-el hide"></div>
+					<div class="js-suggestions-active hide">
+						<div class="auto-suggest-loading"></div>
+					</div>
+					<div class="city-parent-box city-box dangling-el hide">
+						<div class="city-listing city-list">
+							<ul class="city-list-collection"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="city-name">
+		<i class="icon-circle"></i>
+		
+		Mumbai, India
+		 <span data-no-pu="" class="edit-text js_edit_return_city">(Edit returning city)</span>
+	</div>
+
+	<div class="bottom-text">
+		Arrival Date: <span class="date">24 Feb 2020</span>
+	</div>
+
+	<div class="empty-city-box js_rc_empty_box">
+		<i class="icon-plus-circle"></i>Add returning city
+	</div>
+</div></div>
+			
+		</div>
+
+
+	</section>
+	<div class="screen-actions">
+		<span id="js_city_step_prev" class="prev-button js_city_step_move prev-btn-dsk">
+			<span class="p-size button prev-btn-dsk">
+				<i class="icon-arrow-left prev-btn-dsk"></i>Back
+				<div id="js_city_prev_step_name" class="step-name prev-btn-dsk">Cities/Dates</div>
+			</span>
+		</span>
+		<span id="js_city_step_next" class="next-button js_city_step_move next-btn-dsk">
+			<span class="p-color p-size button next-btn-dsk">
+				<span id="js_city_next_step_title" class="step_title next-btn-dsk">Next</span>
+				<i class="icon-arrow-right next-btn-dsk"></i>
+				<div id="js_city_next_step_name" class="step-name next-btn-dsk">Preferences</div>
+			</span>
+		</span>
+	</div>
+</div></div>
+	</div>
+</div>
+</body>
+</html>
